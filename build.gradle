@@ -8,10 +8,6 @@ buildscript {
     }
 }
 
-ext {
-    compileSdkVersion = compileSdkVersion
-}
-
 allprojects {
     repositories {
         google()
@@ -21,5 +17,5 @@ allprojects {
 }
 
 task clean(type: Delete) {
-    delete rootProject.buildFile
+    delete rootProject.buildDir
 }
