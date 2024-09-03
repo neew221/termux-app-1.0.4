@@ -4,12 +4,8 @@ buildscript {
         google()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:8.2.1"
+        classpath 'com.android.tools.build:gradle:4.2.2'
     }
-}
-
-ext {
-    compileSdkVersion = compileSdkVersion
 }
 
 allprojects {
@@ -21,5 +17,5 @@ allprojects {
 }
 
 task clean(type: Delete) {
-    delete rootProject.buildFile
+    delete rootProject.buildDir
 }
